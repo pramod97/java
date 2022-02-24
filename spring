@@ -1,0 +1,112 @@
+import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Portfolio
+public class portfolio {
+	@Id
+	private int id;
+	private String holderName;
+	private String investment;
+	
+	public portfolio()
+	{
+		
+	}
+	public int getId()
+	{
+		return id;
+	}
+	public void setid(int id)
+	{
+		this.id=id;	
+	}
+	
+	public String getholderName()
+	{
+		return holderName;
+	}
+	
+	public void setHolderName(String holderName)
+	{
+		this.holderName=holderName;
+	}
+	
+	public String getholderName()
+	{
+		return holderName;
+	}
+	
+	public void setinvestment(String investment)
+	{
+		this.investment=investment;
+	}
+
+}
+/////////////////////////////////////////////////////////
+
+
+import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+public class Employee {
+	
+	@Id
+	private int id;
+	private String comapny;
+	private int quantity;
+	private int price;
+	
+	public Employee()
+	{
+		
+	}
+	public int getId()
+	{
+		return id;
+	}
+	public void setid(int id)
+	{
+		this.id=id;	
+	}
+	
+	public String getcompany()
+	{
+		return company;
+	}
+	
+	public void setCompany(String company)
+	{
+		this.company=company;
+	}
+	
+	public int getQuantity()
+	{
+		return quantity;
+	}
+	
+	public void setQuantity(int quantity)
+	{
+		this.quantity=quantity;
+	}
+	
+	public int getPrice()
+	{
+		return price;
+	}
+	
+	public void setPrice(int price)
+	{
+		this.price=price;
+	}
+	
+	
+}
+
+
+	
+
